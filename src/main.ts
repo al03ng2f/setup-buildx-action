@@ -20,6 +20,7 @@ import * as stateHelper from './state-helper.js';
 actionsToolkit.run(
   // main
   async () => {
+    core.info('🚀 HELLO FROM MY FORK! 🚀');
     const inputs: context.Inputs = await context.getInputs();
     stateHelper.setCleanup(inputs.cleanup);
     const version = context.getVersion(inputs);
